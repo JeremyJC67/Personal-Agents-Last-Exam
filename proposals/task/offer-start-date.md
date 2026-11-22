@@ -31,9 +31,9 @@ Use the exact names from the [homepage](../../README.md#environment-domains). Ch
 
 Who is the user? Briefly describe the background, preferences and prior experiences that matter to this task.
 
-**✍️ Your answer (required):** Kai Deng is a machine-learning engineer at Brightfold (fictional; `@brightfold.example`) on an H-1B work visa. Kai has accepted the idea of moving to Northwind Labs (`@northwind.example`), whose recruiter is Dana Whitfield. Elena Ruiz (`@ruiz-immigration.example`) is the attorney handling the transfer. All times are in Los Angeles (`America/Los_Angeles`, UTC offset `-08:00`). The immigration timeline is a simplified fiction and is not legal guidance.
+**✍️ Your answer (required):** Kai Deng is a machine-learning engineer at Brightfold (fictional; `@brightfold.example`) on an H-1B work visa. Kai has accepted the idea of moving to Northwind Labs (`@northwind.example`), whose recruiter is Dana Whitfield. Elena Ruiz (`@ruiz-immigration.example`) is the attorney handling the transfer. All times are in Los Angeles (`America/Los_Angeles`; UTC offset `-07:00` until November 1, 2026, then `-08:00`). The immigration timeline is a simplified fiction and is not legal guidance.
 
-On `2026-08-21T19:15:00-08:00` Kai wrote a note titled "Job change rules":
+On `2026-08-21T19:15:00-07:00` Kai wrote a note titled "Job change rules":
 
 > 1. I give full notice. I don't burn bridges.
 > 2. I don't resign until Elena says the receipt is in.
