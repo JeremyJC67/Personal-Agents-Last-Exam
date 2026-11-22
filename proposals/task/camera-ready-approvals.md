@@ -31,9 +31,9 @@ Use the exact names from the [homepage](../../README.md#environment-domains). Ch
 
 Who is the user? Briefly describe the background, preferences and prior experiences that matter to this task.
 
-**✍️ Your answer (required):** Lian Zhou is a PhD student at Harbor State University (fictional; addresses end in `@hsu.example`) and first author of paper 412, accepted at the fictional ACSE 2027 workshop. The co-authors are Marta Silva (advisor), Tomasz Wrona (ran the main experiments) and Hana Okada (owns the robustness analysis, Table 3). All times are in Los Angeles (`America/Los_Angeles`, UTC offset `-08:00`).
+**✍️ Your answer (required):** Lian Zhou is a PhD student at Harbor State University (fictional; addresses end in `@hsu.example`) and first author of paper 412, accepted at the fictional ACSE 2027 workshop. The co-authors are Marta Silva (advisor), Tomasz Wrona (ran the main experiments) and Hana Okada (owns the robustness analysis, Table 3). All times are in Los Angeles (`America/Los_Angeles`; UTC offset `-07:00` until November 1, 2026, then `-08:00`).
 
-In March 2026 a workshop paper went out with a number a co-author had never seen, and Lian had to apologize by email. On `2026-03-14T20:30:00-08:00` Lian wrote a note titled "How I work on papers":
+In March 2026 a workshop paper went out with a number a co-author had never seen, and Lian had to apologize by email. On `2026-03-14T20:30:00-07:00` Lian wrote a note titled "How I work on papers":
 
 > 1. A co-author's OK covers the build they saw. Layout, typo and reference-format changes keep it. If a number, claim or caption changes, the OK is gone for the person who owns that result and for Marta, so ask them again.
 > 2. If a deadline comes and someone has not re-approved, send the newest build that everyone's OK still covers, not the newest build, and tell me.
@@ -65,7 +65,7 @@ A good outcome: on November 18 the chairs receive `b-52d7`, Hana and Marta are a
 Focus on the single most important decision point in your story rather than repeating the full timeline. Keep **Personalization insight** to 1–2 sentences (under 240 characters; it appears in the public proposal list).
 
 - **Personalization insight (required):** Lian's own rule ties a co-author's OK to the build they saw. A quiet Table 3 change voids it, so "everyone signed off" does not cover the newest build, while a layout-only build keeps its approval.
-- **Decisive context and trigger (required):** The trigger is Lian's request at `2026-11-18T10:00:00-08:00`. The governing context is Lian's note from `2026-03-14T20:30:00-08:00`. Applying it needs the approvals from November 14, the four builds and the change log in Files. Only reading the builds shows that `b-63e9` changed a Table 3 number under a "formatting" log entry and that `b-52d7` did not change any number.
+- **Decisive context and trigger (required):** The trigger is Lian's request at `2026-11-18T10:00:00-08:00`. The governing context is Lian's note from `2026-03-14T20:30:00-07:00`. Applying it needs the approvals from November 14, the four builds and the change log in Files. Only reading the builds shows that `b-63e9` changed a Table 3 number under a "formatting" log entry and that `b-52d7` did not change any number.
 - **Generic assistant mistake (required):** A capable assistant trusts "everyone signed off" and the change log and sends the newest build, `b-63e9`. A more cautious one sees the new build and falls back to `b-41c2`, the last build with explicit approvals, which ignores that Lian's rule carries approval through layout-only changes.
 - **Different user, different action (required):** Keep the November 18 request word for word. Another first author, Rowan, has the same builds and approvals, but Rowan's note says: "Once the group has signed off on a paper, we trust each other's later fixes. Send the newest build." For Rowan, the right action is to send `b-63e9`. For Lian, it is `b-52d7`.
 
