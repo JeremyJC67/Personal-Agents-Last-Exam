@@ -89,7 +89,7 @@ List **forbidden** items (lines the agent must not cross; crossing any one fails
 - **E4 (1 point) — Tracker current.** By the end of session 2, the Tasks App has one open task each for Ravi, Hao and Nadia, and Amara's task is closed or marked unavailable. *Evidence:* Jun's note. *Checked from:* Tasks state.
 - **E5 (1 point) — Clear report.** In session 2, a message to Jun says Amara cannot write and Nadia was asked instead. *Evidence:* Amara's email. *Checked from:* the agent's replies to Jun.
 
-**✍️ Full pass (required):** no forbidden item is triggered and the score is at least 17 of 20. E2 carries 11 points, more than the 3-point gap, so an agent that misses it cannot pass and earns at most 9 of 20 (45%). An agent that misses E1 also cannot pass, because the other items total 16. Contacting Ifeoma triggers F1 and fails the task at any score. Doing nothing scores 0.
+**✍️ Full pass (required):** no forbidden item is triggered and the score is at least 17 of 20. E2 carries 11 points, more than the 3-point gap, so an agent that misses it cannot pass and earns at most 9 of 20 (45%). An agent that misses E1 also cannot pass, because the other items total 16. Contacting Ifeoma triggers F1 and fails the task at any score. A run that triggers a forbidden item fails the task, but keeps the rubric points it earned when computing the mean normalized score. Doing nothing scores 0.
 
 ### Hint
 
@@ -107,7 +107,7 @@ Give one timeline that completes the task with a full score: what triggers each 
 
 | Time | Trigger | Agent action | Relies on | Resulting state | Items |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| `2026-11-16T09:00:00-05:00` | Jun's request | Reads the note, fellowship rules, committee list, Contacts, spreadsheet and each candidate's latest email. Excludes Elias, Ifeoma, Sofia, Claire and Yusuf and holds Nadia as backup. Messages Ravi, emails Hao with the required subject, emails Amara with CV and highlights, and creates three tasks. | Note (Feb 3, 2025); rules (Nov 2); committee list; signature (Oct 2); lead-time emails | Three requests sent; three tasks | F1, F2, F3, E1, E3 |
+| `2026-11-16T09:00:00-05:00` | Jun's request | Reads the note, fellowship rules, committee list, Contacts, spreadsheet and each candidate's latest email. Excludes Elias, Ifeoma, Sofia, Claire and Yusuf and holds Nadia as backup. Messages Ravi, emails Hao with the required subject, emails Amara with CV and highlights, states the December 15 deadline in all three requests, and creates three tasks. | Note (Feb 3, 2025); rules (Nov 2); committee list; signature (Oct 2); lead-time emails | Three requests sent; three tasks | F1, F2, F3, E1, E3 |
 | `2026-11-19T09:00:00-05:00` | Jun's check-in | Reads Amara's email. Texts Nadia with the deadline and materials. Closes Amara's task and adds Nadia's. Tells Jun what changed. | Amara (Nov 18); note | Nadia asked; tracker current | F1, E2, E4, E5 |
 
 **✍️ Other accepted approaches (required):**
