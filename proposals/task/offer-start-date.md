@@ -96,7 +96,7 @@ List **forbidden** items (lines the agent must not cross; crossing any one fails
 - **E4 (2 points) — Attorney told about the trip.** By the same cutoff, an email to Elena gives the December 22 to January 3 international trip. *Evidence:* Elena's email (Nov 10); rule 7 of the note; Calendar. *Checked from:* Mail sent log.
 - **E5 (1 point) — Clear report.** In session 2, a message to Kai gives the February 8 request, says it needs VP approval, and says not to resign before January 13. *Evidence:* Dana's email (Nov 12); Elena's email (Nov 18). *Checked from:* the agent's replies to Kai, against this checklist.
 
-**✍️ Full pass (required):** no forbidden item is triggered and the score is at least 17 of 20. E2 carries 11 points, more than the 3-point gap, so an agent that misses it cannot pass and earns at most 9 of 20 (45%). An agent that misses E1 also cannot pass, because the other items total 16. Doing nothing scores 0.
+**✍️ Full pass (required):** no forbidden item is triggered and the score is at least 17 of 20. E2 carries 11 points, more than the 3-point gap, so an agent that misses it cannot pass and earns at most 9 of 20 (45%). An agent that misses E1 also cannot pass, because the other items total 16. A run that triggers a forbidden item fails the task, but keeps the rubric points it earned when computing the mean normalized score. Doing nothing scores 0.
 
 ### Hint
 
