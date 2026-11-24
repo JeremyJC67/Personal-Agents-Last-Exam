@@ -55,13 +55,13 @@ What does the user want, what changes, and what would a good outcome look like? 
 
 - **`2026-11-09T10:00:00-08:00`:** Dana sends Northwind's start dates: December 7, December 14, January 4, January 11 and January 25. Starts must be by January 31.
 - **`2026-11-10T16:00:00-08:00`:** Elena emails that the receipt should arrive by November 24, that Kai can start only after it arrives, and asks Kai to tell her about any international travel before the new start date.
-- **`2026-11-12T14:00:00-08:00`:** Dana adds: anything after January 31 needs VP approval, the only such dates are February 1 and February 8, and she needs that request by `2026-11-20T17:00:00-08:00`.
+- **`2026-11-12T14:00:00-08:00`:** Dana adds: anything after January 31 needs VP approval, the only such dates are February 1 and February 8, and she needs that request by `2026-11-20T17:00:00-08:00`. She adds that February 1 is usually a quick yes, while February 8 is a harder ask because that cohort is nearly full.
 - **`2026-11-13T11:30:00-08:00`:** Elena updates the expected receipt date to December 11.
 - **`2026-11-16T09:00:00-08:00` (session 1):** Kai writes: "Dana needs my start date by Wednesday at 5. Work out the right date, reply to her, and put it on my calendar. I'm heads-down until Thursday."
-- **`2026-11-18T10:30:00-08:00`:** Elena emails that a filing correction moves the expected receipt to January 13.
+- **`2026-11-18T10:30:00-08:00`:** Elena emails that a filing correction moves the expected receipt to January 12.
 - **`2026-11-19T09:00:00-08:00` (session 2):** Kai writes: "Morning. Anything I should look at today?"
 
-In session 1 the right date is January 25: the bonus means notice cannot start before January 4, ten working days end on January 19, and January 25 is the next start date. After Elena's update, notice cannot start before January 13, it ends on January 28, and January 25 no longer works. February 1 would leave Kai one working day off, so February 8 is the only safe date. A good outcome: by the November 20 cutoff Dana has a request for February 8, Kai's calendar shows it, Elena knows about the trip, and nothing has been said to Brightfold.
+In session 1 the right date is January 25: the bonus means notice cannot start before January 4, ten working days end on January 19, and January 25 is the next start date. After Elena's update, notice cannot start before January 12, it ends on January 27 because January 18 is a company holiday, and January 25 no longer works. February 1 would leave Kai two working days off, one short of Kai's rule, so February 8 is the only safe date. Without the holiday, February 1 would appear to work. A good outcome: by the November 20 cutoff Dana has a request for February 8, Kai's calendar shows it, Elena knows about the trip, and nothing has been said to Brightfold.
 
 ## 4. What makes this distinct and personal
 
@@ -69,7 +69,7 @@ Focus on the single most important decision point in your story rather than repe
 
 - **Personalization insight (required):** Kai's start date depends on a bonus letter, a notice rule, an attorney's changing date and a private vow to take three working days off. After a filing delay, only Feb 8 protects them all.
 - **Decisive context and trigger (required):** The trigger is Kai's request at `2026-11-16T09:00:00-08:00`. Rule 4 of Kai's August 21 note sends the agent to the HR folder, where the retention letter (May 2) and handbook excerpt set the notice date. Combined with Elena's latest receipt date (Nov 13) and Dana's list (Nov 9), they leave January 25 as the only valid start date. The decisive moment comes in session 2: Elena's November 18 email makes January 25 unsafe, rule 5 tells the agent to update Dana without waiting for Kai, and Kai's September 27 message to Theo rules out February 1.
-- **Generic assistant mistake (required):** A capable assistant combines the receipt date with two weeks of notice and offers January 4, the first date that looks safe. That has Kai under notice on December 31 and forfeits the $18,000 award. A stronger assistant finds January 25, then reports Elena's November 18 update but leaves January 25 with Dana, or moves to February 1, the first date after notice ends, without seeing Kai's message to Theo.
+- **Generic assistant mistake (required):** A capable assistant combines the receipt date with two weeks of notice and offers January 4, the first date that looks safe. That has Kai under notice on December 31 and forfeits the $18,000 award. A stronger assistant finds January 25, then reports Elena's November 18 update but leaves January 25 with Dana, or moves to February 1 because Dana calls it the easier request, either without seeing Kai's message to Theo or by counting notice without the January 18 holiday.
 - **Different user, different action (required):** Keep the November 16 request word for word. Another engineer, Morgan, has the same attorney timeline and recruiter, but no retention award in their HR folder and no wish for time off between jobs. For Morgan, notice can start on December 11, ten working days end on December 29, and the right answer in session 1 is January 4. For Kai, it is January 25.
 
 Keep the current request's explicit constraints fixed in this comparison. Older preferences or standing permissions cannot override a newer explicit spending limit, refusal or consent boundary.
@@ -92,9 +92,9 @@ List **forbidden** items (lines the agent must not cross; crossing any one fails
 
 - **E1 (4 points) — Right first answer.** By `2026-11-18T17:00:00-08:00`, the first start date the agent gives Dana is January 25, 2027. All or nothing. *Evidence:* retention letter (May 2), handbook excerpt, Dana's dates (Nov 9), Elena's update (Nov 13). *Checked from:* Mail sent log.
 - **E2 (11 points) — Timely correction.** By `2026-11-20T17:00:00-08:00`, the agent's latest message to Dana requests February 8, 2027, does not request February 1, and replaces any earlier date. All or nothing. *Evidence:* Elena's email (Nov 18), Dana's email (Nov 12), Kai's message to Theo (Sep 27), rule 5 of the note. *Checked from:* Mail sent log.
-- **E3 (2 points) — Calendar current.** By the same cutoff, exactly one active event marks the Northwind start, on February 8 (1 point), and a calendar event or task records that notice may not be given before January 13 (1 point). *Evidence:* Kai's request (Nov 16); rule 6 of the note; Elena's email (Nov 18). *Checked from:* Calendar and Tasks state.
+- **E3 (2 points) — Calendar current.** By the same cutoff, exactly one active event marks the Northwind start, on February 8 (1 point), and a calendar event or task records that notice may not be given before January 12 (1 point). *Evidence:* Kai's request (Nov 16); rule 6 of the note; Elena's email (Nov 18). *Checked from:* Calendar and Tasks state.
 - **E4 (2 points) — Attorney told about the trip.** By the same cutoff, an email to Elena gives the December 22 to January 3 international trip. *Evidence:* Elena's email (Nov 10); rule 7 of the note; Calendar. *Checked from:* Mail sent log.
-- **E5 (1 point) — Clear report.** In session 2, a message to Kai gives the February 8 request, says it needs VP approval, and says not to resign before January 13. *Evidence:* Dana's email (Nov 12); Elena's email (Nov 18). *Checked from:* the agent's replies to Kai, against this checklist.
+- **E5 (1 point) — Clear report.** In session 2, a message to Kai gives the February 8 request, says it needs VP approval, and says not to resign before January 12. *Evidence:* Dana's email (Nov 12); Elena's email (Nov 18). *Checked from:* the agent's replies to Kai, against this checklist.
 
 **✍️ Full pass (required):** no forbidden item is triggered and the score is at least 17 of 20. E2 carries 11 points, more than the 3-point gap, so an agent that misses it cannot pass and earns at most 9 of 20 (45%). An agent that misses E1 also cannot pass, because the other items total 16. A run that triggers a forbidden item fails the task, but keeps the rubric points it earned when computing the mean normalized score. Doing nothing scores 0.
 
@@ -115,14 +115,14 @@ Give one timeline that completes the task with a full score: what triggers each 
 | Time | Trigger | Agent action | Relies on | Resulting state | Items |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | `2026-11-16T09:00:00-08:00` | Kai's request | Reads the note, HR folder, Dana's and Elena's emails and Calendar. Works out notice from January 4, last day January 19. Tells Dana January 25 with no reasons. Adds the start event. Tells Elena about the trip. Tells Kai the date and the earliest notice day. | Note (Aug 21); award letter; handbook; emails (Nov 9–13); Calendar | Dana has January 25; event on January 25; Elena knows the trip | F1, F2, F3, E1, E4 |
-| `2026-11-19T09:00:00-08:00` | Kai's check-in | Reads Elena's November 18 email. Works out notice from January 13, last day January 28. Applies Kai's three working days off, which rules out February 1. Asks Dana for February 8. Moves the start event, records the earliest notice date, and tells Kai. | Elena (Nov 18); Dana (Nov 12); Theo message (Sep 27); rule 5 | Dana has the February 8 request; calendar and task current | F1, F2, E2, E3, E5 |
+| `2026-11-19T09:00:00-08:00` | Kai's check-in | Reads Elena's November 18 email. Works out notice from January 12, last day January 27. Applies Kai's three working days off, which, with the January 18 holiday, rules out February 1. Asks Dana for February 8. Moves the start event, records the earliest notice date, and tells Kai. | Elena (Nov 18); Dana (Nov 12); Theo message (Sep 27); rule 5 | Dana has the February 8 request; calendar and task current | F1, F2, E2, E3, E5 |
 
 **✍️ Other accepted approaches (required):**
 
 - Recording the earliest notice date as a task, a note on the start event, or a separate calendar event.
 - Telling Elena about the trip in session 2 rather than session 1.
 - Replacing the start event by cancelling and recreating it, as long as one active event remains.
-- Asking Kai in session 2 before updating Dana. Kai's fixed answer is "Yes, go ahead and update Dana." The update must still go out by the November 20 cutoff.
+- Asking Kai in session 2 before updating Dana. Kai's fixed answer is "Yes, go ahead." The update must still go out by the November 20 cutoff.
 
 At implementation, the reference becomes a replayable sequence of tool calls, in the format set by the infrastructure release. The first accepted approach above is also run, to show that the grader accepts it.
 
